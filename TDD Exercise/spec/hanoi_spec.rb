@@ -14,6 +14,7 @@ RSpec.describe Hanoi do
   describe "#move" do
     
     it "moves the topmost disc to another pile" do
+      
       game.move_disc([0, 1])
       expect(game.discs[1]).to eq([1])
       expect(game.discs[0]).to eq([3, 2])
