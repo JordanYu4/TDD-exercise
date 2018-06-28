@@ -1,4 +1,4 @@
-require 'card'
+require_relative 'card'
 
 class Deck
   
@@ -24,4 +24,12 @@ class Deck
     cards.shuffle!
   end
 
+  def take(n)
+    arr = []
+    n.times do
+      arr << cards.pop
+    end
+    arr
+  end
+  
 end

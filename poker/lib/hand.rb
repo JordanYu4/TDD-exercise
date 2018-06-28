@@ -1,4 +1,4 @@
-require 'card'
+require_relative 'card'
 
 class Hand
   attr_accessor :cards
@@ -6,4 +6,5 @@ class Hand
   def initialize
     @cards = []
   end 
+  
 end
